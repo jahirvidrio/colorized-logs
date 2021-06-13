@@ -5,7 +5,11 @@
   "main": "dist/index.js",
   "umd:main": "dist/index.js",
   "source": "src/index.js",
-  "files": ["dist", "package.json", "README.md"],
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build:types && node esbuild.build.js",
@@ -16,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jahirvidrio/colorized-logger.git"
+    "url": "git+https://github.com/jahirvidrio/colorized-logs.git"
   },
   "keywords": [
     "logger"
@@ -24,22 +28,12 @@
   "author": "Jahir Vidrio",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jahirvidrio/colorized-logger/issues"
+    "url": "https://github.com/jahirvidrio/colorized-logs/issues"
   },
-  "homepage": "https://github.com/jahirvidrio/colorized-logger#readme",
+  "homepage": "https://github.com/jahirvidrio/colorized-logs#readme",
   "devDependencies": {
     "@types/node": "^15.12.2",
-    "@typescript-eslint/eslint-plugin": "^4.26.1",
-    "@typescript-eslint/parser": "^4.26.1",
     "esbuild": "^0.12.8",
-    "eslint": "^7.28.0",
-    "eslint-config-google": "^0.14.0",
-    "eslint-plugin-import": "^2.23.4",
-    "nodemon": "^2.0.7",
-    "ts-node": "^10.0.0",
     "typescript": "^4.3.2"
-  },
-  "dependencies": {
-    "colors": "^1.4.0"
   }
 }
