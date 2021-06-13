@@ -1,10 +1,11 @@
 {
-  "name": "corlized-logger",
+  "name": "corlized-logs",
   "version": "1.0.0",
   "description": "Nodejs console logs colorized",
   "main": "dist/index.js",
   "umd:main": "dist/index.js",
   "source": "src/index.js",
+  "files": ["dist", "package.json", "README.md"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build:types && node esbuild.build.js",

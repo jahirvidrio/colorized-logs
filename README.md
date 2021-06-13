@@ -1,11 +1,11 @@
-# Colorized logger
+# Colorized logs
 A NodeJS console logs colorized
 
 
 ## Instalation
 
 ```bash
-npm install colorized-logger
+npm install colorized-logs
 ```
 
 ## Examples
