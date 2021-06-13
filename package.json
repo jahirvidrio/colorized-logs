@@ -1,10 +1,11 @@
 {
-  "name": "corlized-logs",
-  "version": "1.0.0",
+  "name": "colorized-logs",
+  "version": "1.0.3",
   "description": "Nodejs console logs colorized",
+  "source": "src/index.ts",
   "main": "dist/index.js",
-  "umd:main": "dist/index.js",
-  "source": "src/index.js",
+  "module": "dist/index.modern.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist",
     "package.json",
@@ -14,9 +15,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build:types && node esbuild.build.js",
     "build:types": "tsc --declaration --outDir dist --allowSyntheticDefaultImports src/index.ts",
-    "lint": "eslint src",
-    "prepare": "npm run build",
-    "prepublish": "npm run lint"
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -32,7 +31,6 @@
   },
   "homepage": "https://github.com/jahirvidrio/colorized-logs#readme",
   "devDependencies": {
-    "@types/node": "^15.12.2",
     "esbuild": "^0.12.8",
     "typescript": "^4.3.2"
   },

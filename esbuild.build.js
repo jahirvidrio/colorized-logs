@@ -8,5 +8,5 @@ esbuild.build({
   target: 'node10.4',
   minify: true,
   external: ['colors'],
-  sourcemap: 'external',
+  sourcemap: true,
 }).catch(() => process.exit(1));
