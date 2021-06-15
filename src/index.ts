@@ -6,6 +6,7 @@ type ColorizedLogger = {
   test(...args: any[]): void;
   error(...args: any[]): void;
   warn(...args: any[]): void;
+  success(...args: any[]): void;
 };
 
 
@@ -29,7 +30,11 @@ export function warn(...args: any[]): void {
   console.warn(colors.bold(colors.yellow(' [ WARNING ] \t')), colors.bold(colors.yellow(args.join(' '))));
 }
 
-const colorizedLogger: ColorizedLogger = { print, info, test, error, warn }
+export function success(...args: any[]): void {
+  console.warn(colors.bold(colors.green(' [ SUCCESS ] \t')), colors.bold(colors.green(args.join(' '))));
+}
+
+const colorizedLogger: ColorizedLogger = { print, info, test, error, warn, success }
 
 
 export default colorizedLogger;
