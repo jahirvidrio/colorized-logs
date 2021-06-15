@@ -18,5 +18,6 @@ logger.info('Info log');
 logger.warn('Warn log');
 logger.error('Error log');
 logger.test('Test log');
+logger.success('Success log');
 ```
 
