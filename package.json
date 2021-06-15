@@ -1,6 +1,6 @@
 {
   "name": "colorized-logs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Nodejs console logs colorized",
   "source": "src/index.ts",
   "main": "dist/index.js",
